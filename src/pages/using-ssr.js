@@ -1,32 +1,27 @@
-import * as React from "react"
-import { Link } from "gatsby"
+// import { IndexPage } from 'components';
+import React, { useRef, useEffect, useState, useLayoutEffect } from 'react';
+import { graphql, Link } from 'gatsby';
+import Layout from 'layouts/Clean';
+import { SEO, DemoContent } from 'components';
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-
-const UsingSSR = ({ serverData }) => {
+const UsingSSR = ({ serverData, location }) => {
   return (
-    <Layout>
-      <Seo title="Using SSR" />
-      <h1>SSR page</h1>
-      <img
-        style={{ width: "300px" }}
-        alt="A random dog"
-        src={serverData.message}
-      />
-      <p>Welcome to a server side rendered page with a random dog photo</p>
-      <p>
-        To learn more, head over to our{" "}
-        <a href="https://www.gatsbyjs.com/docs/reference/rendering-options/server-side-rendering/">
-          documentation about Server Side Rendering
-        </a>
-        .
-      </p>
-      <Link to="/">Go back to the homepage</Link>
-    </Layout>
-  )
-}
+    <>
+      <Layout location={location}>
+        <SEO
+          keywords={['Trame Digitali']}
+          title="Trame Digitali"
+          titleTemplate="%s"
+          description="Index di nn nuovo sito di trame digitali"
+          location={location}
+        />
 
+        <DemoContent />
+        {serverData.message}
+      </Layout>
+    </>
+  );
+};
 export default UsingSSR
 
 export async function getServerData() {
