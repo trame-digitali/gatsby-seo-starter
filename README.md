@@ -15,10 +15,14 @@ Contains these features:
 React v17, Storybook v6, Gatsby v4, Tailwind v3
 # 🚀 Quick start
 
-`npm i -g storybook@latest`
-`npm install --legacy-peer-deps`
-`gatsby develop`
-`npm run storybook` to start storybook
+`npm i -g storybook@latest`  to install storybook in your system
+
+`npm install --legacy-peer-deps`  to install node modules
+
+`gatsby develop`  to start development
+
+`npm run storybook` to start storybook  
+
 
 ### Notes on packages
 html-webpack-plugin@2.30.1: out of support but must be used for storybook
