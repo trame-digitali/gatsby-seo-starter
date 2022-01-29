@@ -12,7 +12,7 @@ const IndexPage = ({ location }) => {
           keywords={['Trame Digitali']}
           title="Trame Digitali"
           titleTemplate="%s"
-          description="Index di nn nuovo sito di trame digitali"
+          description="Index di un nuovo sito di trame digitali"
           location={location}
         />
 

@@ -58,7 +58,7 @@ const DemoContent = () => (
       <Text>Welcome to the Gatsby Tailwind CSS + Styled-Components + Storybook Starter.</Text>
       <Footer>
         <a
-          href="https://github.com/denvash/gatsby-styled-tailwind-storybook-starter"
+          href="https://github.com/trame-digitali/gatsby-seo-starter"
           target="_blank"
           rel="noopener noreferrer">
           <GithubIcon />
